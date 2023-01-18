@@ -25,6 +25,20 @@ export class OtpPageComponent implements OnInit {
 
    
   }
+  move(e: any,p:any,c:any,n:any)
+  {
+    var length = c.value.length;
+    var maxlength = c.getAttribute('maxlength');
+    if (length == maxlength)
+    {
+      n.focus();
+    }
+    if (e.key == 'Backspace')
+    {
+      p.focus();
+      }
+  }
+  
   myForm = new FormGroup({
     t1: new FormControl('', [Validators.required]),
     t2: new FormControl('', [Validators.required]),

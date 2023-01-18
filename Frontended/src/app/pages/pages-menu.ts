@@ -8,7 +8,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   //   home: true,
   // },
   {
-    title: 'Home',
+    title: 'Dashboard',
     icon: 'home-outline',
     link: '/pages/iot-dashboard',
   },
@@ -17,7 +17,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   //   group: true,
   // },
   {
-    title: 'Dashboard',
+    title: 'Users',
     icon: 'layout-outline',
     link:'/pages/layout'
     

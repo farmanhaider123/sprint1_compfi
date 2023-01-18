@@ -24,30 +24,40 @@
             class="input-container d-flex flex-row justify-content-center mt-2"
           >
             <input
+              #txt1
+              (keyup)="move($event, '', txt1, txt2)"
               type="text"
               class="m-1 text-center form-control rounded"
               maxlength="1"
               formControlName="t1"
             />
             <input
+              #txt2
+              (keyup)="move($event, txt1, txt2, txt3)"
               type="text"
               class="m-1 text-center form-control rounded"
               maxlength="1"
               formControlName="t2"
             />
             <input
+              #txt3
+              (keyup)="move($event, txt2, txt3, txt4)"
               type="text"
               class="m-1 text-center form-control rounded"
               maxlength="1"
               formControlName="t3"
             />
             <input
+              #txt4
+              (keyup)="move($event, txt3, txt4, txt5)"
               type="text"
               class="m-1 text-center form-control rounded"
               maxlength="1"
               formControlName="t4"
             />
             <input
+              #txt5
+              (keyup)="move($event, txt4, txt5, '')"
               type="text"
               class="m-1 text-center form-control rounded"
               maxlength="1"
